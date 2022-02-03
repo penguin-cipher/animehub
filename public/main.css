@@ -1,0 +1,197 @@
+/* Small screens - MOBILE */
+@media only screen { 
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yaldevi&display=swap');
+
+    *{  
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+
+        /* color */
+        --primary-color: #534EED;
+        --secondary-color: #FCFAFF;
+
+        /* fonts */
+        --header-font:'Yaldevi', sans-serif;
+        --body-font: 'Roboto', sans-serif;
+    }
+
+    body {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        font-family: var(--body-font);
+    }
+
+    .header {
+
+        background-color: var(--primary-color);
+        
+        
+    }
+
+    .logo {
+        padding: 20px 0;
+        font-size:1.2rem;
+        text-align: center;
+        color: var(--secondary-color);
+
+    }
+
+
+    .field {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 25%;
+        width: 94%;
+
+        
+    }
+
+    .inputField {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom:15px ;
+
+    }
+
+    .input {
+
+        outline:none;
+        padding: 12px 30px;
+        border-radius:10px;
+        border: 1px solid #adabab;
+    }
+
+    .input[placeholder] {
+        padding-left: 20px;
+        font-size:1.2rem;
+    }
+
+    .input:hover , .input:focus {
+        border: 2px solid var(--primary-color);
+    }
+
+    .lb {
+        font-size:1.2rem;
+        text-transform:capitalize;
+        padding-top:15px;
+    }
+
+    .countryCard {
+        display: flex;
+        width: 100%;
+        border-radius: 12px;
+        flex-direction:column;
+        height: 40vh;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        margin-bottom:20px;
+
+    }
+
+        .bgImage {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            border-radius:12px 12px 0px 0px;
+            width: 100%;
+            height: 30vh; 
+        }
+
+    .info {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .info h1 {
+
+        font-size:1rem;
+        font-family: var(--header-font);
+    }
+    
+    .info p {
+        padding-top: 2px;
+        margin-left:10px;
+        margin-right:10px;
+        font-size: 0.7rem;
+    }
+
+} 
+    
+
+/* from medium screens - TABLET - to large screens*/
+@media only screen and (min-width: 64em) and (max-width: 90em) {
+
+
+    .field {
+        padding-top: 2%;
+        width: 100%;
+    
+        
+    }
+
+    .inputField {
+        width: 40%;
+        padding-bottom: 40px;
+
+    }
+
+
+    .input {
+        position: relative;
+        right: 70%;
+    }
+
+    .countryCard {
+        width: 50%;
+        position: relative;
+        right: 16%;
+    }
+
+
+    .lb {
+        font-size:1.2rem;
+        text-transform:capitalize;
+        position: relative;
+        right: 70%;
+        padding-top:10px;
+    }
+
+    .info {
+        text-align: center;
+        padding: 20px 0;
+    
+    }
+    
+    .info h1 {
+        font-size:1.25rem;
+    }
+    .info p {
+        padding-top: 2px;
+        margin: 0;
+        font-size:1rem;
+        
+    }
+
+
+    .countryCard {
+        width: 50%;
+        height: 50vh;
+    }
+
+
+    .bgImage {
+    
+        width: 100%;
+        height: 40vh;
+    }
+}

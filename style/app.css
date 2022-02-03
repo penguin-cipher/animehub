@@ -1,0 +1,191 @@
+/* Small screens - MOBILE */
+@media only screen { 
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yaldevi&display=swap');
+
+    *{  
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+
+        /* color */
+        --highlight: #bcc5c5;
+        --primary-color: #e5e5e7ff;
+        --secondary-color: #ee5438ff;
+        --background-color: #0F2027;
+        --shadow-color: #0F2027;
+
+        /* fonts */
+        --header-font:'Yaldevi', sans-serif;
+        --body-font: 'Roboto', sans-serif;
+    }
+
+
+    body {
+        height: 100vh;
+        font-family: var(--body-font);
+        color: var(--primary-color);
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    h1 {
+        font-family: var(--header-font);
+    }
+
+
+    .header{
+
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 50px 0;  
+    }
+
+    .header span {
+        color: var(--secondary-color);
+    }
+
+    .logo{
+     
+        font-size: 2em;
+
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+        margin:0 1em;
+
+    }
+
+
+    .inputField {
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+    }
+
+    .input {
+        background-color: var(--background-color);
+        color: var(--primary-color);
+        margin-bottom: 10px; 
+        border-radius: 10px;
+        padding: 10px 10px;
+        outline: none;
+        border: none;
+        width: 100%;
+    
+    }
+
+    .input:hover, :focus {
+        border-bottom: 3px solid var(--secondary-color);
+    }
+
+    .lb {
+        display:none;
+    }
+
+    .info-search {
+        text-align: center;
+        margin: 30px;
+    }
+    .info-search h1 {
+        font-family: var(--header-font);
+        color: var( --highlight);
+        font-size: 2.3em;
+    }
+
+    .info-search h3 {
+        font-family: var(--body-font);
+        color: #8f9292;
+        font-size: 1em;
+    }
+
+    .countryCard {
+        display: flex;
+        margin-top: 20px;
+        margin-right: 10px;
+        
+    }
+
+    .bgImage {
+    flex:40%;
+    }
+
+    .info {
+    flex:60%;
+    }
+
+    .bgImage + .info {       
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .bgImage , .bg-bgImage {
+
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+        margin-right: 20px;
+        height: 250px;
+        width: 170px;
+        
+    }
+
+    .bgImage {
+        -webkit-box-shadow:10px 10px 50px var(--shadow-color);
+        -moz-box-shadow:10px 10px 50px var(--shadow-color);
+        box-shadow:10px 10px 50px var(--shadow-color);
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+        border-radius: 15px;
+    }
+
+    .info h1 {
+        display: flex;
+        align-items: flex-start;
+        font-size: 1em;
+        font-weight: bold;
+        color: var(--secondary-color)
+    }
+
+    .info p {
+        font-size: 0.8em;
+        margin-top: 20px;
+        color: var( --highlight);
+        
+    }
+
+/* Tablet screen & ipad  */
+@media only screen and (mmin-width:48.0em) {
+
+}
+
+/* ipad pro screens */
+@media only screen and (min-width:49.0em) and (max-width:64em) {
+
+}
+
+/* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width:64.063em) and (max-width:90.0em) {
+
+}
+
+
+
+  
+  
+  
+
+ 
+
+
+
+
+
+}
